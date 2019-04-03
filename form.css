@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea {
+    border:none;
+}
+
+body {
+    background-color: #455B56;
+    font-family: 'Roboto', sans-serif;  
+    color: #eee;
+}
+
+#main-header {
+    background-color: #888888;
+    text-align: center;
+    color: #eeeeee;
+    padding: 5px 0;
+}
+
+#title {
+    text-align: center;
+    margin-top: 20px;
+    color: #eeeeee;
+}
+
+main {
+    background-color: #349983;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 2rem;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    height: 2rem;
+    margin-top: .4rem;
+    padding-left: .3rem;
+}
+
+label{
+    margin-top: 1rem;
+}
+
+#choices {
+    margin-top: 1.2rem;
+}
+
+#dropdown-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: baseline; */
+}
+
+#dropdown {
+    height: 2rem;
+    min-width: 15rem;
+    /* justify-self: flex-end; */
+}
+
+fieldset {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+#radio2 {
+    margin-left: 8rem;
+}
+
+#checkboxes {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#checkboxes div {
+    margin-top: .8rem;
+}
+
+#thoughts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+textarea {
+    font-size: 1.2rem;
+    padding-top: .6rem;
+    padding-left: .6rem;
+}
+
+textarea::placeholder {
+    font-size: 1.2rem;
+    padding-top: .5rem;
+    padding-left: .5rem;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    margin-top: 1.5rem;
+    min-width: 50%;
+    height: 3rem;
+    border: none;
+    border-radius: 20px;
+    box-shadow: #222 0 5px 10px;
+    background-color: tan;
+}
+
+#submit:focus {
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+/* Footer */
+#main-footer {
+    background-color: #888888;
+    color: #eeeeee;
+    text-align: center;
+    padding: 5px 0;
+}
+
+#main-footer a {
+    text-decoration: none;
+    color: darkblue;
+}

@@ -16,28 +16,27 @@
       A responsive mobile-first survey form design
   </header>
 
+  <!-- title -->
+  <h1 id="title">Survey Form</h1>
+  
   <!-- page main content -->
   <main>
-    <!-- form header -->
-    <header>
-      <h1 id="title">Survey Form</h1>
-    </header>
-
     <!-- form body -->
-    <section>
-      <p id="description">Let me know what you think of this design</p>
+    <p id="description">Let me know what you think of this design</p>
 
-      <form id="survey-form" action="." method="post">
-        <section id="info">
-          <label id="name-label" for="name">* Name:</label>
-          <input type="text" name="name" id="name" required placeholder="Full name">
-          <label id="email-label" for="email">* Email:</label>
-          <input type="email" name="email" id="email" required placeholder="Email Address">
-          <label id="number-label" for="number">* Age:</label>
-          <input type="number" name="age" id="number" min="13" max="100" required placeholder="Age">
-        </section>
+    <form id="survey-form" action="." method="post">
+      <section id="info">
+        <label id="name-label" for="name">* Name:</label>
+        <input type="text" name="name" id="name" required placeholder="Full name">
+        <label id="email-label" for="email">* Email:</label>
+        <input type="email" name="email" id="email" required placeholder="Email Address">
+        <label id="number-label" for="number">* Age:</label>
+        <input type="number" name="age" id="number" min="13" max="100" required placeholder="Age">
+      </section>
 
-        <section id="choices">
+      <section id="choices">
+
+        <div id="dropdown-container">
           <!-- select menu -->
           <label for="dropdown">What do you do?</label>
           <select name="dropdown" id="dropdown">
@@ -46,40 +45,50 @@
             <option value="2">Backend</option>
             <option value="3">Full stack</option>
           </select>
+        </div>
 
-          <!-- radio buttons group -->
-          <fieldset>
-            <legend>The design is</legend>
-            <input type="radio" name="radio" id="radio1" value="1">
-            <label for="radio1">Good</label>
-            <input type="radio" name="radio" id="radio2" value="2">
-            <label for="radio2">Bad</label>
-          </fieldset>
+        <!-- radio buttons group -->
+        <fieldset>
+          <legend>The design is</legend>
+          <input type="radio" name="radio" id="radio1" value="1">
+          <label for="radio1">Good</label>
+          <input type="radio" name="radio" id="radio2" value="2">
+          <label for="radio2">Bad</label>
+        </fieldset>
 
-          <!-- checkboxes -->
-          <section id="checkboxes">
-            <p id="check-section">What should be improved?</p>
+        <!-- checkboxes -->
+        <section id="checkboxes">
+          <p id="check-section">What should be improved?</p>
+          <div>
             <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
             <label for="checkbox1">Colors</label>
+          </div>
+          <div>
             <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2">
             <label for="checkbox2">Spaces</label>
+          </div>
+          <div>
             <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox3">
             <label for="checkbox3">Lorem ipsum dolor</label>
+          </div>
+          <div>
             <input type="checkbox" name="checkbox" id="checkbox4" value="checkbox4">
             <label for="checkbox4">Nullam elementum lorem</label>
-          </section>
+          </div>
         </section>
-        
-        <section id="thoughts">
-          <!-- textarea -->
-          <label for="text">Your thoughts?</label><br>
-          <textarea name="textarea" id="text" cols="30" rows="10"></textarea>
-        </section>
+      </section>
+      
+      <section id="thoughts">
+        <!-- textarea -->
+        <label for="text">Your thoughts?</label><br>
+        <textarea name="textarea" id="text" cols="30" rows="10" placeholder="What do you think?"></textarea>
+      </section>
 
+      <div class="submit">
         <input id="submit" type="submit" value="Send your opinion">
+      </div>
 
-      </form>
-    </section>
+    </form>
   </main>
 
   <!-- page main footer -->
@@ -87,6 +96,6 @@
       Built with patience by <a href="http://shahwan.me">Ahmed Shahwan</a>
   </footer>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 </html>
