@@ -15,6 +15,13 @@ body {
     background-color: #455B56;
     font-family: 'Roboto', sans-serif;  
     color: #eee;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
 }
 
 #main-header {
@@ -34,15 +41,34 @@ main {
     background-color: #349983;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 20px 10px;
-    padding: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
-#info {
+@media (min-width: 768px) {
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding: 3rem;
+    }
+}
+
+#description {
+    text-align: center;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+}
+
+@media (min-width: 768px) {
+    /* form {
+        display: grid;
+        grid-auto-columns: ;
+    } */
 }
 
 input[type="text"],
@@ -57,45 +83,30 @@ label{
     margin-top: 1rem;
 }
 
-#choices {
-    margin-top: 1.2rem;
-}
-
-#dropdown-container {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: baseline; */
-}
-
 #dropdown {
+    margin-top: .5rem;
     height: 2rem;
     min-width: 15rem;
-    /* justify-self: flex-end; */
 }
 
-fieldset {
-    margin-top: 2rem;
-    padding: 1rem;
+#radio-p {
+    margin-top: 1.5rem;
 }
 
+#radio1,
 #radio2 {
-    margin-left: 8rem;
+    margin-top: 1rem;
 }
 
-#checkboxes {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
+#check-p {
+    margin-top: 1.5rem;
 }
 
-#checkboxes div {
-    margin-top: .8rem;
+.check {
+    margin-top: .5rem;
 }
 
-#thoughts {
-    display: flex;
-    flex-direction: column;
+#thoughts-lbl {
     margin-top: 1.5rem;
 }
 
@@ -111,14 +122,12 @@ textarea::placeholder {
     padding-left: .5rem;
 }
 
-.submit {
-    display: flex;
-    justify-content: center;
-}
-
 #submit {
     margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 50%;
+    max-width: 80%;
     height: 3rem;
     border: none;
     border-radius: 20px;
@@ -128,7 +137,7 @@ textarea::placeholder {
 
 #submit:focus {
     box-shadow: none;
-    transform: translateY(10px);
+    transform: translateY(5px);
 }
 
 /* Footer */

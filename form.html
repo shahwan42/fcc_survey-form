@@ -25,69 +25,60 @@
     <p id="description">Let me know what you think of this design</p>
 
     <form id="survey-form" action="." method="post">
-      <section id="info">
-        <label id="name-label" for="name">* Name:</label>
-        <input type="text" name="name" id="name" required placeholder="Full name">
-        <label id="email-label" for="email">* Email:</label>
-        <input type="email" name="email" id="email" required placeholder="Email Address">
-        <label id="number-label" for="number">* Age:</label>
-        <input type="number" name="age" id="number" min="13" max="100" required placeholder="Age">
-      </section>
 
-      <section id="choices">
+      <label id="name-label" for="name">* Name:</label>
+      <input type="text" name="name" id="name" required placeholder="Full name">
+      <label id="email-label" for="email">* Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Email Address">
+      <label id="number-label" for="number">* Age:</label>
+      <input type="number" name="age" id="number" min="13" max="100" required placeholder="Age">
 
-        <div id="dropdown-container">
-          <!-- select menu -->
-          <label for="dropdown">What do you do?</label>
-          <select name="dropdown" id="dropdown">
-            <option value="0" disabled selected>Select an option</option>
-            <option value="1">Frontend</option>
-            <option value="2">Backend</option>
-            <option value="3">Full stack</option>
-          </select>
-        </div>
+      <!-- select menu -->
+      <label for="dropdown">What do you do?</label>
+      <select name="dropdown" id="dropdown">
+        <option value="0" disabled selected>Select an option</option>
+        <option value="1">Frontend</option>
+        <option value="2">Backend</option>
+        <option value="3">Full stack</option>
+      </select>
 
-        <!-- radio buttons group -->
-        <fieldset>
-          <legend>The design is</legend>
-          <input type="radio" name="radio" id="radio1" value="1">
-          <label for="radio1">Good</label>
-          <input type="radio" name="radio" id="radio2" value="2">
-          <label for="radio2">Bad</label>
-        </fieldset>
-
-        <!-- checkboxes -->
-        <section id="checkboxes">
-          <p id="check-section">What should be improved?</p>
-          <div>
-            <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
-            <label for="checkbox1">Colors</label>
-          </div>
-          <div>
-            <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2">
-            <label for="checkbox2">Spaces</label>
-          </div>
-          <div>
-            <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox3">
-            <label for="checkbox3">Lorem ipsum dolor</label>
-          </div>
-          <div>
-            <input type="checkbox" name="checkbox" id="checkbox4" value="checkbox4">
-            <label for="checkbox4">Nullam elementum lorem</label>
-          </div>
-        </section>
-      </section>
-      
-      <section id="thoughts">
-        <!-- textarea -->
-        <label for="text">Your thoughts?</label><br>
-        <textarea name="textarea" id="text" cols="30" rows="10" placeholder="What do you think?"></textarea>
-      </section>
-
-      <div class="submit">
-        <input id="submit" type="submit" value="Send your opinion">
+      <!-- radio buttons group -->
+      <p id="radio-p">The design is</p>
+      <div class="radio">
+        <input type="radio" name="radio" id="radio1" value="1">
+        <label for="radio1">Good</label>
       </div>
 
+      <div class="radio">
+        <input type="radio" name="radio" id="radio2" value="2">
+        <label for="radio2">Bad</label>
+      </div>
+
+
+      <!-- checkboxes -->
+      <p id="check-p">What should be improved?</p>
+      <div class="check">
+        <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
+        <label for="checkbox1">Colors</label>
+      </div>
+      <div class="check">
+        <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2">
+        <label for="checkbox2">Spaces</label>
+      </div>
+      <div class="check">
+        <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox3">
+        <label for="checkbox3">Lorem ipsum dolor</label>
+      </div>
+      <div class="check">
+        <input type="checkbox" name="checkbox" id="checkbox4" value="checkbox4">
+        <label for="checkbox4">Nullam elementum lorem</label>
+      </div>
+
+      <!-- Thoughts textarea -->
+      <label id="thoughts-lbl" for="text">Your thoughts?</label><br>
+      <textarea name="textarea" id="text" cols="30" rows="10" placeholder="What do you think?"></textarea>
+
+      <input id="submit" type="submit" value="Send your opinion">
     </form>
   </main>
 
