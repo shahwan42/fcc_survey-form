@@ -4,4 +4,4 @@
 
 still practicing my frontend skills, hope it gets better
 
-[open the form](./form.html)
+[open the form](https://shahwan42.github.io/fcc-survey-form/form.html)
